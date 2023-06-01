@@ -1,0 +1,39 @@
+{% extends 'admin/Base.html.twig'%}
+
+
+{% block title %}Type Reclamations {% endblock %}
+
+{% block body %}
+    <h1>Typereclamation index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Type_reclamation</th>
+                <th>Priorite</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for typereclamation in typereclamations %}
+            <tr>
+                <td>{{ typereclamation.id }}</td>
+                <td>{{ typereclamation.typeReclamation }}</td>
+                <td>{{ typereclamation.priorite }}</td>
+                <td>
+                    <a href="{{ path('app_typereclamation_show', {'id': typereclamation.id}) }}">show</a>
+                    <a href="{{ path('app_typereclamation_edit', {'id': typereclamation.id}) }}">edit</a>
+                    <a href="{{ path('app_typereclamation_delete', {'id': typereclamation.id}) }}">delete</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_typereclamation_new') }}">Create new</a>
+{% endblock %}

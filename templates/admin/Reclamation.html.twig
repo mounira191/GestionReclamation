@@ -1,0 +1,134 @@
+
+
+{%extends 'admin/Base.html.twig'%}
+
+{% block body %}
+
+
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg "  style='margin-left: 20% ;'>
+
+    <div class="container-fluid py-4">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;margin-top: 150px;">
+        <div class="col-12">
+          <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Table des reclamations </h6>
+                  <a class="btn btn-primary" href="{{path('trie')}}">Tri </a>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+
+
+              {% if reclamations %}
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs  opacity-7">Id_reclamation</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NomClient</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Prenom</th>
+                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tel</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">adresse</th>
+                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Description</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Etat</th>
+                     
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Typereclamation</th>
+                      
+                    </tr>
+                  </thead>
+                  <div class="carddd">
+     
+{{ form_start(searchForm,{attr:{novalidate:'novalidate'}}) }}
+   {{ form_widget(searchForm.NomClient, {'attr': {'class': 'form-control', 'placeholder':"Chercher Par Id "}}) }}
+ 
+
+  <div class="col-12">
+  {{ form_label(searchForm.Chercher, null, {'label_attr': {'class': 'form-label'}}) }}
+   {{ form_widget(searchForm.Chercher, {'attr': {'class': 'form-control'}}) }}
+ 
+</div>
+</div>
+                  <tbody>
+                
+
+                  {% for reclamation in reclamations %}
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          
+                          <div class="d-flex flex-column justify-content-center"> 
+                            <p class="text-xs font-weight-bold mb-0">{{reclamation.id}}</p>  
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.NomClient}}</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.Prenom}}</span>
+                      </td>
+                       <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.Tel}}</span>
+                      </td>
+                       <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.adresse}}</span>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">{{reclamation.Email}}</p>  
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">{{reclamation.Description}}</p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.Etat}}</span>
+                      </td>
+                      
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{reclamation.typereclamation}}</span>
+                      </td>
+           
+                      
+                      <td class="align-middle">
+                      
+                        <a href="{{ path('app_reclamation_edit', {'id': reclamation.id}) }}" class="btn btn-warning text-dark px-3 mb-0 " data-toggle="tooltip" data-original-title="Edit user">
+                          Modifier
+                        </a>
+                        <a href="{{ path('app_reclamation_show', {'id': reclamation.id}) }}" class="btn btn-danger text-gradient px-3 mb-0" data-toggle="tooltip" data-original-title="Edit user">
+                        show
+                        </a>
+                        <a href="{{ path('app_reclamation_delete', {'id': reclamation.id}) }}" class="btn btn-warning text-dark px-3 mb-0 " data-toggle="tooltip" data-original-title="Edit user">
+                          Delete
+                        </a>
+                      </td>
+                    </tr>
+                    
+                  {% endfor %}
+                 
+                     </tbody>
+                      
+                </table>
+                 
+                {% endif %}
+                <a href="{{ path('app_reclamation_new') }}" class="btn btn-success text-gradient px-3 mb-0">Create new</a> 
+                  
+                {# <a href="{{ path('app_reclamation_de_soin_new2') }}" class="btn btn-success text-gradient px-3 mb-0">Create new</a> #}
+                  
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {{ knp_pagination_render(reclamations) }}
+      
+    </div>
+  </main>
+   
+  {% endblock %}
+   
+  
+ 

@@ -1,0 +1,136 @@
+{% extends 'client/base.html.twig' %}
+
+{% block title %}Hello ClientController!{% endblock %}
+
+{% block body %}
+ <!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section bg-img cover-background left-overlay-dark" data-overlay-dark="8" data-background="{{asset('assets/client/img/banner/page-title.jpg')}}">
+            <div class="container">
+                <div class="page-title mx-1-6 mx-lg-2-0 mx-xl-2-6 mx-xxl-2-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Blog Grid</h1>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="ps-0">
+                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="#!">Blog Grid</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block p-3 rounded-circle bg-primary position-absolute z-index-1 top-35 right-20 ani-top-bottom"></div>
+            <div class="d-inline-block p-2 rounded-circle bg-secondary position-absolute z-index-1 top-25 left-10 ani-top-bottom"></div>
+            <div class="d-inline-block bg-white p-3 ani-zoomin rounded-circle position-absolute bottom-5 left-10 opacity1 z-index-1"></div>
+        </section>
+
+        <!-- ACTUALITES
+        ================================================== -->
+<section>
+            <div class="container">
+                <div class="row gx-xxl-5 mt-n2-2">
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="300ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-01.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Business</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mb-4"><a href="blog-details.html">Here’s what people are saying about insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="450ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-02.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Agency</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">You will never believe these truth behind insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="600ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-03.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Design</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">Fantastic insurance with minimal spending.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="300ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-04.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Business</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mb-4"><a href="blog-details.html">The reason why everyone love insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="450ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-05.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Corporate</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">Understand the background of insurance now.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="600ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/blog/blog-06.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Web</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">The worst advices we’ve heard for insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+{% endblock %}

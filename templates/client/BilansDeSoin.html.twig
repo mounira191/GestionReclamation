@@ -1,0 +1,81 @@
+{% extends 'client/base.html.twig' %}
+
+{% block title %}Hello ClientController!{% endblock %}
+
+{% block body %}
+
+ <!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section bg-img cover-background left-overlay-dark" data-overlay-dark="8" data-background="img/banner/page-title.jpg">
+            <div class="container">
+                <div class="page-title mx-1-6 mx-lg-2-0 mx-xl-2-6 mx-xxl-2-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Mes bilans</h1>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="ps-0">
+                                <li><a href="index-2.html">Home</a></li>
+                                <li><a href="#!">Espace client</a></li>
+                                <li><a href="#!">Mes bilans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block p-3 rounded-circle bg-primary position-absolute z-index-1 top-35 right-20 ani-top-bottom"></div>
+            <div class="d-inline-block p-2 rounded-circle bg-secondary position-absolute z-index-1 top-25 left-10 ani-top-bottom"></div>
+            <div class="d-inline-block bg-white p-3 ani-zoomin rounded-circle position-absolute bottom-5 left-10 opacity1 z-index-1"></div>
+        </section>
+
+        <!-- BLOG LIST
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0 mt-n2-2">
+                        <article class="card card-style10 border-0 h-auto image-hover wow fadeInUp mt-2-2" data-wow-delay="100ms">
+                            
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li class="text-danger text-capitalize">refusée</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="mb-4"><a href="blog-details.html">Animal</a></h3>
+                                <p>There are endless ways to create a some ways to have a business. We spend more time at the meetings than ever with knowledge melioration.</p>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">info <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+
+                        <ul class="pagination justify-content-center d-sm-flex text-center mb-0 mt-6 mt-lg-7 wow fadeInUp" data-wow-delay="200ms">
+                            <li><a href="#!"><i class="fas fa-long-arrow-alt-left me-2"></i></a></li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li><a href="#!">2</a></li>
+                            <li><a href="#!">3</a></li>
+                            <li><a href="#!"><i class="fas fa-long-arrow-alt-right ms-2"></i></a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sidebar ps-xl-4">
+                            <div class="widget mb-1-9 p-4 widget_search wow fadeInUp" data-wow-delay="200ms">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="search" class="form-control search-input" placeholder="Search...">
+                                        <div class="input-group-append">
+                                            <button class="butn-style3" type="button"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}

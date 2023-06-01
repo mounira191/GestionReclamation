@@ -1,0 +1,38 @@
+{% extends 'admin/Base.html.twig'%}
+
+{% block body %}
+
+
+<div style='margin-left: 20% ;'>
+    <h1>reclamation</h1>
+
+    <div class="row" style="display: flex;align-items: center;justify-content: center;margin-top: 150px;">
+        <div class="col-12">
+            <div class="card my-4">
+                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ typereclamation.id }}</td>
+            </tr>
+            <tr>
+                <th>Typereclamation</th>
+                <td>{{ typereclamation.typereclamation }}</td>
+            </tr>
+            <tr>
+                <th>Priorite</th>
+                <td>{{ typereclamation.priorite }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style=" margin-bottom: 10px;">
+    <a href="{{ path('app_typereclamation_index') }}" class=" btn btn-dark">back to list</a>
+
+    <a href="{{ path('app_typereclamation_edit', {'id': typereclamation.id}) }}" class=" btn btn-warning">edit</a>
+
+    {{ include('typereclamation/_delete_form.html.twig') }}
+{% endblock %}

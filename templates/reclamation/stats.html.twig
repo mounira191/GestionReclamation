@@ -1,0 +1,49 @@
+{%extends 'admin/Base.html.twig'%}
+
+{% block title %}
+    Gestion des Reclamations
+{% endblock %}
+{% block body %}
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg "  style='margin-left: 20% ;'>
+
+    <div class="container-fluid py-4">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;margin-top: 150px;">
+        <div class="col-12">
+          <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Table des reclamations </h6>
+                 
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+    <canvas id="reclamations" class="charts" width="400" height="150"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <script>
+        let reclamations = document.querySelector("#reclamations")
+        let recGraph = new Chart(reclamations, {
+            type: "bar",
+            data: {
+
+                labels: {{ dates|raw }},
+                datasets: [{
+                    label: "Nombre de reclamations",
+                    data: {{ reclamationsCount|raw }},
+                    backgroundColor: '#0f730b',
+
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        })
+    </script>
+
+{% endblock %}

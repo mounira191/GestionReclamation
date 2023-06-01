@@ -1,0 +1,83 @@
+{% extends 'admin/Base.html.twig'%}
+
+{% block body %}
+
+
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg "  style='margin-left: 20% ;'>
+
+    <div class="container-fluid py-4">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;margin-top: 150px;">
+        <div class="col-12">
+          <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Table des reclamations </h6>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+
+
+              {% if typereclamations %}
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs  opacity-7">Id  </th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Type de reclamation</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">priorié</th>
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  {% for typereclamation in typereclamations %}
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          
+                          <div class="d-flex flex-column justify-content-center"> 
+                            <p class="text-xs font-weight-bold mb-0">{{typereclamation.id}}</p>  
+                          </div>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{typereclamation.typereclamation}}</span>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">{{typereclamation.priorite}}</p>  
+                      </td>
+                     
+                      
+                      <td class="align-middle">
+                      
+                        <a href="{{ path('app_reclamation_edit', {'id': typeRecamation.id}) }}" class="btn btn-warning text-dark px-3 mb-0 " data-toggle="tooltip" data-original-title="Edit user">
+                          Modifier
+                        </a>
+                        <a href="{{ path('app_typereclamation_show', {'id': typereclamation.id}) }}" class="btn btn-danger text-gradient px-3 mb-0" data-toggle="tooltip" data-original-title="Edit user">
+                        show
+                        </a>
+                        <a href="{{ path('app_typereclamation_delete', {'id': typereclamation.id}) }}" class="btn btn-danger text-gradient px-3 mb-0" data-toggle="tooltip" data-original-title="delete user">
+                        delete
+                      </td>
+                    </tr>
+                  {% endfor %}
+                     </tbody>
+                </table>
+                {% endif %}
+                <a href="{{ path('app_typereclamation_new') }}" class="btn btn-success text-gradient px-3 mb-0">Create new</a> 
+                  
+                {# <a href="{{ path('app_reclamation_de_soin_new2') }}" class="btn btn-success text-gradient px-3 mb-0">Create new</a> #}
+                  
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </main>
+  
+  {% endblock %}

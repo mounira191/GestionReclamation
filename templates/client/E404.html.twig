@@ -1,0 +1,24 @@
+{% extends 'client/base.html.twig' %}
+
+{% block title %}Hello ClientController!{% endblock %}
+
+{% block body %}
+
+<section class="p-0 bg-dark">
+        <div class="container d-flex flex-column position-relative z-index-9">
+            <div class="row align-items-center justify-content-center min-vh-100">
+                <div class="row align-items-center min-vh-100 text-center justify-content-center">
+                    <div class="text-center my-1-6">
+                        <img src="{{asset('assets/client/img/content/error.png')}}" class="mb-4 mb-lg-7" alt="...">
+                        <h2 class="mb-4 text-white">Sorry, something went wrong!</h2>
+                        <p class="w-sm-80 w-lg-60 mx-auto mb-4 text-white opacity8">This page is incidentally inaccessible because of support. We will back very before long much obliged for your understanding.</p>
+                        <a href="index-2.html" class="butn-style3 me-2 my-1 my-sm-0">Return Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  {% endblock %}

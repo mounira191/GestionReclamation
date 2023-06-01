@@ -1,0 +1,72 @@
+{% extends 'admin/base.html.twig' %}
+
+
+{% block title  %} Calender {% endblock %}
+
+{% block body %}
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg "  style='margin-left: 20% ;'>
+
+    <div class="container-fluid py-4">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;margin-top: 150px;">
+        <div class="col-12">
+          <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Table des reclamations </h6>
+                 
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+           
+        <div id="calendrier">
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+    
+
+        </div>
+
+ </div>
+
+<div class="text-center">
+
+     <script>
+
+
+         window.onload = () =>{
+             let calendarElt=document.querySelector("#calendrier")
+             let calendar=new FullCalendar.Calendar(calendarElt,{
+                initialView: 'dayGridMonth',
+                 locale:'fr',
+                 headerToolbar:{
+                     start: 'prev,next today',
+                     center:'title',
+                     end: 'dayGridMonth, timeGridWeek'
+
+
+                 },
+                 allDaySlot: false,
+                 events:{{data|raw}},
+                 editable: true,
+                 eventResizableFromStart: true
+
+             })
+             calendar.on('eventChange',(e)=>{
+                 console.log(e)
+                 }
+             )
+             calendar.render()
+         }
+
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.js" integrity="sha256-oenhI3DRqaPoTMAVBBzQUjOKPEdbdFFtTCNIosGwro0=" crossorigin="anonymous"></script>
+</div>
+
+ 
+ {% endblock %}
+ 
+{# {%block right%} <div class="right"> 
+
+ {%endblock%} #}

@@ -1,0 +1,408 @@
+{% extends './client/base.html.twig' %}
+
+{% block title %}Hello ClientController!{% endblock %}
+
+{% block body %}
+
+   
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+       
+
+        <!-- BANNER
+        ================================================== -->
+        <section class="pt-6 pb-10 pt-sm-6 pb-sm-14 py-md-16 py-lg-20 py-xxl-24 bg-img cover-background banner-style1 left-overlay-dark" data-overlay-dark="9">
+            <div class="container">
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                        <h1 class="display-13 display-sm-10 display-md-6 display-lg-4 mb-4 position-relative text-white wow fadeInUp" data-wow-delay="200ms">Vous les aimez, nous les assurons.</h1>
+                        <p class="mb-2-3 lead w-lg-80 text-white d-none d-sm-block wow fadeInUp" data-wow-delay="400ms">Protégez votre animal, protégez votre amour sans fin. </p>
+                        <div class="wow fadeInUp" data-wow-delay="600ms">
+                            <a href="{{path('app_Aboutus')}}" class="butn-style3 secondary align-middle mb-3 mb-sm-0">See Features</a>
+                            <span class="me-2 ms-2 text-white">or</span><br class="d-block d-sm-none">
+                            <a href="{{path('app_Contactus')}}" class="text-white text-primary-hover font-weight-600">Read More <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                                        <div class="image-hover">
+                                            <img src="{{asset('assets/client/img/pets/vadim-kaipov-es3jueYA88c-unsplash.jpg')}}" alt="..." class="rounded">
+                                        </div>
+                                    </div>           
+            </div>
+                    
+                </div>   
+                
+            <div class="d-inline-block p-3 rounded-circle bg-primary position-absolute z-index-1 top-35 right-20 ani-top-bottom"></div>
+            <div class="d-inline-block p-2 rounded-circle bg-secondary position-absolute z-index-1 top-25 left-10 ani-top-bottom"></div>
+            <div class="d-inline-block bg-white p-3 ani-zoomin rounded-circle position-absolute bottom-5 left-10 opacity1 z-index-1"></div>
+        </section>
+
+        <!-- ABOUT US
+        ================================================== -->
+        <section class="about-section pb-0">
+            <div class="container mt-lg-3 mt-xl-0">
+                <div class="row clearfix align-items-xl-center">
+                    <div class="col-lg-6 mb-2-9 mb-lg-0 position-relative">
+                        <div class="row">
+                            <div class="col-6 mt-1-9 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="image-hover">
+                                    <img src="{{asset('assets/client/img/pets/ashkan-forouzani-ignxm3E1Rg4-unsplash.jpg')}}" class="rounded" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 mt-1-9 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="image-hover">
+                                    <img src="{{asset('assets/client/img/pets/img.jpg')}}" class="rounded" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute p-3 p-sm-4 bg-secondary rounded-circle start-50 top-50 translate-middle wow fadeIn" data-wow-delay="600ms">
+                            <img src="{{asset('assets/client/img/icons/03.png')}}" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-column wow fadeIn" data-wow-delay="400ms">
+                        <div class="ps-xl-2-9">
+                            <div class="title-style2">
+                                <h2 class="h1 mb-4">Assist customers with arriving at the objectives.</h2>
+                            </div>
+                            <p class="mb-1-9 lead text-dark font-weight-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                            <div class="d-sm-flex align-items-center mb-2-3 pb-2-3 border-bottom">
+                                <div class="flex-shrink-0 mb-4 mb-sm-0">
+                                    <div class="text-center p-3 shadow rounded bg-dark">
+                                        <h3 class="h2 lh-1 mb-0 text-primary"><span class="countup">25</span><span>+</span></h3>
+                                        <small class="text-white">Years Experience</small>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-sm-4">
+                                    <p class="mb-0">Long established fact that reader will be distracted the readable of pages when looking at its layout.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-sm-flex align-items-center">
+                                <div class="me-sm-1-9 mb-3 mb-sm-0">
+                                    <ul class="social-icon-style3 mb-0 list-unstyled">
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <a class="butn-style3" href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-md left-5 top-75 border-secondary-color d-none d-xl-block"></div>
+        </section>
+
+      
+
+        <!-- COUNTER
+        ================================================== -->
+        <section class="bg-light counter-style1">
+            <div class="container">
+                <div class="row mt-n1-9">
+                    <div class="col-sm-6 col-lg-3 mt-1-9 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="text-center counter-block">
+                            <h3 class="display-12 display-lg-10 display-xl-6"><span class="countup">120</span>+</h3>
+                            <p class="mb-0 lead">Insurance Policies</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-1-9 wow fadeInUp" data-wow-delay="350ms">
+                        <div class="text-center counter-block">
+                            <h3 class="display-12 display-lg-10 display-xl-6"><span class="countup">98</span>+</h3>
+                            <p class="mb-0 lead">Awards WON</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-1-9 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="text-center counter-block">
+                            <h3 class="display-12 display-lg-10 display-xl-6"><span class="countup">573</span>+</h3>
+                            <p class="mb-0 lead">Skilled Contractors</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mt-1-9 wow fadeInUp" data-wow-delay="650ms">
+                        <div class="text-center counter-block">
+                            <h3 class="display-12 display-lg-10 display-xl-6"><span class="countup">267</span>k</h3>
+                            <p class="mb-0 lead">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block bg-secondary p-3 ani-zoomin rounded-circle position-absolute top-8 right-5 z-index-1 opacity1"></div>
+        </section>
+
+        <!-- WHY CHOOSE US
+        ================================================== -->
+        <section class="p-0 overflow-visible z-index-4 bg-transparent feature-box1">
+            <div class="container-fluid px-xxl-15">
+                <div class="rounded pt-7 pt-md-13 px-1-6 px-xl-2-9 overflow-visible position-relative bg-img cover-background dark-overlay" data-overlay-dark="85" data-background="{{asset('assets/client/img/bg/bg-02.jpg')}}">
+                    <div class="row g-0 z-index-4 position-relative">
+                        <div class="col-xl-3 mb-1-9 mb-xl-0 wow fadeIn" data-wow-delay="200ms">
+                            <div class="title-style2 white mb-1-6 mb-xl-2-3">
+                                <h2 class="mb-0 h1 text-white">Why Always Choose Insurs!</h2>
+                            </div>
+                            <a class="butn-style3 medium" href="about.html">View More</a>
+                        </div>
+                        <div class="col-xl-9 why-us-inner position-relative z-index-4">
+                            <div class="row ps-xl-2-3 mt-n1-9">
+                                <div class="col-sm-6 col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="400ms">
+                                    <div class="card border-0 text-center shadow h-100">
+                                        <div class="card-body px-1-6 px-sm-1-9 py-1-9 py-md-2-9">
+                                            <i class="icon-wallet display-13 text-secondary mb-4"></i>
+                                            <h3 class="h5 mb-3"><a href="about.html">100% Safe Money</a></h3>
+                                            <p class="mb-sm-1-9 text-color-light-blue">Insurance agencies can be organized either as a conventional stock organization.</p>
+                                            <a href="about.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="600ms">
+                                    <div class="card border-0 text-center shadow h-100">
+                                        <div class="card-body px-1-6 px-sm-1-9 py-1-9 py-md-2-9">
+                                            <i class="icon-recycle display-13 text-secondary mb-4"></i>
+                                            <h3 class="h5 mb-3"><a href="about.html">Anytime Money Back</a></h3>
+                                            <p class="mb-sm-1-9 text-color-light-blue">Insurance agencies can be organized either as a conventional stock organization.</p>
+                                            <a href="about.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mt-1-9 wow fadeIn" data-wow-delay="800ms">
+                                    <div class="card border-0 text-center shadow h-100">
+                                        <div class="card-body px-1-6 px-sm-1-9 py-1-9 py-md-2-9">
+                                            <i class="icon-briefcase display-13 text-secondary mb-4"></i>
+                                            <h3 class="h5 mb-3"><a href="about.html">Professional Company</a></h3>
+                                            <p class="mb-sm-1-9 text-color-light-blue">Insurance agencies can be organized either as a conventional stock organization.</p>
+                                            <a href="about.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block p-2 rounded-circle bg-secondary position-absolute z-index-1 bottom-0 left-10 ani-top-bottom"></div>
+        </section>
+
+        <!-- FAQ
+        ================================================== -->
+        <section class="pb-0 pt-18 pt-md-20 pt-lg-24">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="200ms">
+                        <div class="pe-xl-6">
+                            <div id="accordion" class="accordion-style">
+                                <div class="card mb-3">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What should I include in my personal statement? </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                        <div class="card-body">
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.                                               
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Do you support banking loan? </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                        <div class="card-body">
+                                            Neque porro quisquam est quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What do I get when my account is paid off? </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                        <div class="card-body">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How can I make a change to my application? </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-bs-parent="#accordion">
+                                        <div class="card-body">
+                                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-1-9 mb-lg-0 order-1 order-lg-2">
+                        <div class="title-style2 mb-2-2 text-start wow fadeInUp" data-wow-delay="200ms">
+                            <h2 class="h1">Les questions les plus fréquents</h2>
+                        </div>
+                        <div class="row mb-2-3">
+                            <div class="col-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="image-hover">
+                                    <img src="{{asset('assets/client/img/pets/gallery-2.jpg')}}" class="rounded" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="image-hover">
+                                    <img src="{{asset('assets/client/img/pets/image_2.jpg')}}" class="rounded" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="600ms">
+                            <p class="mb-1-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <!-- TESTIMONIALS
+        ================================================== -->
+        <section class="p-0 testimonials-four bg-dark">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6 py-8 py-xl-10 position-relative">
+                        <div class="title-style2 white mb-2-2">
+                            <h2 class="mb-0 h1 text-white w-lg-80">What Our Clients Say About Insurs</h2>
+                        </div>
+
+                        <div class="testimonial-carousel3 owl-carousel owl-theme">
+                            <div>
+                                <p class="lh-lg mb-2-6 w-lg-90 w-xl-80 text-white lead">Your company is truly upstanding and is behind its product 100%. We've used insurance for the last five years. It fits our needs perfectly. I didn't even need training. Nice work on your insurance. It's incredible.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{asset('assets/client/img/avatar/avatar-01.jpg')}}" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="text-white">Georgia Holden </h5>
+                                        <p class="mb-0 text-primary">- Senior Marketer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="lh-lg mb-2-6 w-lg-90 w-xl-80 text-white lead">Thanks insurance! Best. Product. Ever! Wow what great service, I love it! Keep up the excellent work. Insurance is the most valuable business resource we have EVER purchased. Insurance is great. Thank You!</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{asset('assets/client/img/avatar/avatar-02.jpg')}}" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="text-white">Hayden Welch</h5>
+                                        <p class="mb-0 text-primary">- Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="lh-lg mb-2-6 w-lg-90 w-xl-80 text-white lead">It's exactly what I've been looking for. Insurance is the most valuable business resource we have EVER purchased. Insurance is exactly what our business has been lacking. I am so pleased with this product.</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{asset('assets/client/img/avatar/avatar-03.jpg')}}" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="text-white">Lucas Azevedo</h5>
+                                        <p class="mb-0 text-primary">- Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="{{asset('assets/client/img/content/quote.png')}}" class="position-absolute mx-auto left-0 right-0 bottom-0 opacity1" alt="...">
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+
+                    
+                        
+                                <div class="image-hover">
+                                    <img src="{{asset('assets/client/img/pets/hudson-hintze-CXQgs12wFHc-unsplash.jpg')}}" class="rounded" alt="...">
+                                </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTUALITES
+        ================================================== -->
+        <section>
+            <div class="container">
+                <div class="title-style2 text-center mb-2-2 wow fadeIn" data-wow-delay="200ms">
+                    <h2 class="h1">Actualités &amp; Nouveautés</h2>
+                </div>
+                <div class="row gx-xxl-5 mt-n1-9">
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="300ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/pets/pricing-1.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Business</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mb-4"><a href="blog-details.html">Here’s what people are saying about insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="450ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/pets/pricing-2.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Agency</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">You will never believe these truth behind insurance.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-1-9 wow fadeInUp" data-wow-delay="600ms">
+                        <article class="card card-style10 border-0 h-100 image-hover">
+                            <div class="card-img position-relative">
+                                <img src="{{asset('assets/client/img/pets/pricing-3.jpg')}}" class="rounded-top" alt="...">
+                                <span class="card-tag"><a href="blog-details.html">Design</a></span>
+                            </div>
+                            <div class="card-body p-1-9 pt-2-3">
+                                <ul class="card-list ps-0 mb-3">
+                                    <li><i class="far fa-calendar me-2"></i>Jan 02, 2023</li>
+                                    <li class="text-capitalize"><i class="far fa-user me-2"></i><a href="#!">admin</a></li>
+                                </ul>
+                                <h3 class="h4 mt-3 mb-4"><a href="blog-details.html">Fantastic insurance with minimal spending.</a></h3>
+                                <a href="blog-details.html" class="text-dark text-primary-hover font-weight-600">Read more <i class="ti-arrow-right ms-2 align-middle display-30"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-block bg-secondary p-3 ani-zoomin rounded-circle position-absolute top-8 left-5 z-index-1 opacity1"></div>
+        </section>
+
+       
+
+    </div>
+
+   
+
+
+
+{% endblock %}
